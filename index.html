@@ -1,0 +1,43 @@
+<!-- inside index.html -->
+<html>
+<head>
+  <title>Typing game</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>Typing game!</header>
+
+  <div class="main">
+
+    <div class="title-box">
+      <p class="message">Practice your typing skills. Click **start** to begin!</p>
+    </div>
+    <div class="quote-box">
+      <p id="quote"></p> <!-- This will display our quote -->
+    </div>
+    <div class="message-box">
+      <p id="message"></p> <!-- This will display any status messages -->
+    </div>
+    
+    <div class="input-area">
+      <input class="typing-box" type="text" aria-label="current word" id="typed-value" /> <!-- The textbox for typing -->
+    </div>
+    <div class="button-area">
+      <button class="button" type="button" id="start">Start</button> <!-- To start the game -->
+    </div>  
+      
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
