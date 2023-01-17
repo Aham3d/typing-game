@@ -57,7 +57,7 @@ document.getElementById('start').addEventListener('click', () => {
   });
 
   // at the end of script.js
-typedValueElement.addEventListener('input', () => {
+  typedValueElement.addEventListener('input', () => {
     // Get the current word
     const currentWord = words[wordIndex];
     // get the current value
@@ -67,7 +67,7 @@ typedValueElement.addEventListener('input', () => {
       // end of sentence
       // Display success
       const elapsedTime = new Date().getTime() - startTime;
-      const message = `CONGRATULATIONS! You finished in ${elapsedTime / 1000} seconds.`;
+      const message = `CONGRATULATIONS! You finished in ${elapsedTime / 1000} seconds.🥳`;
       messageElement.innerText = message;
     } else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord) {
       // end of word

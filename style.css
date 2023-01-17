@@ -183,6 +183,21 @@ select {
     border: 1px solid rgba(0, 0, 0, 0.559);
     border-radius: 5px;
     font-size: 20px;
+    
+  }
+  
+  input {
+    font-family: Exo;
+  }
+
+  input:focus {
+    border: none;
+  }
+
+  .message-box {
+    font-family: Exo;
+    margin-top: 10px;
+    margin-bottom: 22px;
   }
 
  
