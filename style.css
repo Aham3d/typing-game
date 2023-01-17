@@ -1,8 +1,96 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* inside style.css */
 .highlight {
-    background-color: yellow;
-    /* color: rgb(23, 255, 23);
-    background-color: black; */
+    color: rgb(240, 237, 222);
+    background-color: black;
+    border-radius: 3px;
+    width: 20px;
   }
   
   .error {
@@ -15,15 +103,8 @@
   /*  */
 
   body {
-    /* background-color: aliceblue; */
+    background-color: rgb(210, 202, 180);
   }
-
-  .main {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-  }
-
 
   header {
     font-family: Lobster;
@@ -31,44 +112,90 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 24px;
-    margin: 60px auto;
+    margin: 10px auto;
 
   }
 
+  .main {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 1200px;
+    text-align: center;
+    align-items: center;
+    /* margin-top: 150px; */
+  }
 
-  .message {
+
+
+
+  .title-box  {
+    height: 40px;
+    width: 330px;
+
+  }
+
+  .title {
     font-family: Exo;
     text-align: center;
-    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    font-size: 12px;
+    background-color: rgb(240, 237, 222);
+    border-radius: 50px;
+    padding-top: 7px;
+
+  }
+
+  .title span {
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .quote-box {
+    margin-top: 140px;
+    max-width: 1100px;
   }
 
   #quote {
     font-family: Exo;
     text-align: center;
+    font-size: 20px;
+
+  }
+
+  .typing-area {
+    width: 1000px;
+    margin: 30px auto;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.093);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
   }
 
   .typing-box   {
-    height: 200px;
-    width: 50%;
-    /* float: right; */
-    /* text-align: center; */
+    height: 45px;
+    width: 500px;
     display: block;
-    border: 1px solid black;
-    margin: 30px auto;
+    border: 1px solid rgba(0, 0, 0, 0.559);
+    border-radius: 5px;
+    font-size: 20px;
   }
 
  
   .button    {
-    background-color: lightgray;
+    background-color: rgb(0, 0, 0);
+    color: rgb(240, 237, 222);
     border: none;
     width: 100px;
     height: 50px;
     font-size: 16px;
     font-family: sans-serif;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
     cursor: pointer;
-    margin-left: 710px;
-    margin-top: 20px;
+
   }
 
